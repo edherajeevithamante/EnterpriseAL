@@ -41,7 +41,7 @@ Main Available Commands :
 
  ⚜ /settings :
 
-⚜ in PM: To Find Out What SETTINGS You Have Set... In A Group. 
+ ⚜ in PM: To Find Out What SETTINGS You Have Set... In A Group. 
 
 Join @RemoticBotSupport For Any Help.
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
