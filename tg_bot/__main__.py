@@ -17,45 +17,36 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
+Hey *{}*  - I'm A Group Management Bot , Here To Manage Your *Groups* .
 
-You can find the list of available commands with /help.
+Made With Love And Maintained By [This Awesome Person](https://t.me/LeaderMasked) . 
 
-[Kigyō's Repo](https://github.com/Dank-del/EnterpriseAL) 
+Special Thanks To [This Person](https://t.me/Unknown_Hacker_X)  . 
 
-The support group chat is at @YorktownEagleUnion
+Hit /help To Know More About My Full Potential Use! 
+
+Want To Add Me To Your Chats ? [Click Here!](http://telegram.me/Remotic_Bot?startgroup=botstart)  . 
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a part of Eagle Union.
+Hello! My Name Is *{}*  .
 
-Have a look at the following for an idea of some of \
-the things I can help you with.
+Main Available Commands :
 
-I'm managed by [dank_as_fuck](https://t.me/dank_as_fuck)
-AI and blacklist module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
-Source code from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
+ ⚜ /start : Start The Bot...
 
-*Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
- - /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
+ ⚜ /help : Help....
 
+ ⚜ /donate : To Find Out More About Donating!
 
-{}
-And the following:
+ ⚜ /settings :
+
+⚜ in PM: To Find Out What SETTINGS You Have Set... In A Group. 
+
+Join @RemoticBotSupport For Any Help.
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Kigyō is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Sorry Sir/Madam , I Don't Accept Donations! Instead Poor Any Poor Person 🙂 .I'll Feel Good.Thanks For Your Generosity."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -147,7 +138,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Hey! PM Me If You Have Any Questions On How To Use My Full Potential Use!")
 
 
 # for test purposes
